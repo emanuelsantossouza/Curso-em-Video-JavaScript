@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo com o DOM</title>
+    <style>
+      div#area{
+        font: normal 20pt Arial;
+        background: rgb(green);
+        color: antiquewhite;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        Interaga....
+    </div>
+
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener("click", clicar) // add varios eventos por chamas no proprio javascript como o oneclicl,mouseenter,mouseout.
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+
+
+        function clicar(){
+            a.innerHTML = "<strong>Clicou!!</strong>"
+            a.style.background = "red" 
+        }
+
+        function entrar(){
+            a.innerHTML = "<strong>Entrou!!</strong>"
+        }
+
+        function sair(){ 
+            a.innerHTML = "<strong>Saiu!!</strong>"
+            a.style.background = "green" 
+        }
+    </script>
+      
+</body>
+</html>
