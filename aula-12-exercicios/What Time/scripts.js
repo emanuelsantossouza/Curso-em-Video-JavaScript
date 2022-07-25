@@ -6,9 +6,10 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     var minuto = data.getMinutes()
+    hora = 19
     
     if (hora >= 0 && hora < 12) {
-        //Bom dia!!
+        //Bom dia!! 
         alert(`Bom Dia Sr(a) ${nome}`)
         img.innerHTML = '<img src="manha.png">'
         document.body.style.background = "#C29557"

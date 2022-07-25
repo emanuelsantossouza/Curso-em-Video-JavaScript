@@ -23,3 +23,9 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+
+#foto {
+    align-items: center;
+    padding: 8px;
+}
