@@ -1,0 +1,31 @@
+body{
+    background:rgb(94, 94, 214);
+    font: normal 15pt Arial;
+}
+
+header{
+    color:blanchedalmond;
+    text-align: center;    
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 25);   
+}
+
+footer{
+    color: blanchedalmond;
+    
+}
+
+div{
+    padding: 5px;
+}
+
+p{
+    text-align: center;
+}
